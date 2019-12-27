@@ -1,0 +1,5 @@
+name: Dart HTML test with just main
+mode: dart
+files:
+  - name: tp-1.dart
+  
