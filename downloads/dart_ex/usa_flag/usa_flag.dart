@@ -24,20 +24,9 @@ void drawUSA(ctx){
   ctx.fillStyle = 'rgb(255, 0, 0)';
   ctx.fillRect(0, 0, flag_w, flag_h);
   //白色條紋
+  for ( int i = 1; i <= 11; i+=2) {
   ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 15.4, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 46.2, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 77.2, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 108.0, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 138.8, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 169.6, flag_w / 1, flag_h / 13);
-  ctx.fillStyle = 'rgb(255, 255, 255)';
-  ctx.fillRect(0, 200.4, flag_w / 1, flag_h / 13);
+  ctx.fillRect(0, 15.4*i, flag_w, 15.4); }
   //藍色部分
   ctx.fillStyle = 'rgb(0, 0, 150)';
   ctx.fillRect(0, 0, flag_w / 2, flag_h / 1.9);
