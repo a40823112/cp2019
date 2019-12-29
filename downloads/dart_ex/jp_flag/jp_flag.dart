@@ -25,7 +25,7 @@ void drawJapan(ctx){
   ctx.arc(150, 100, 60, 0,  Math.pi * 2, true);
   ctx.closePath();
   ctx.fillStyle = 'rgb(188, 0, 45)';
-  ctx.fill()
+  ctx.fill();
 
 }
 
