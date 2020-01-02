@@ -138,7 +138,7 @@ init_mathjax();
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='亂數分組流程圖.html'>亂數分組流程圖</a><li><a href='按鈕.html'>按鈕</a><li><a href='W16 檢驗考試.html'>W16 檢驗考試</a><li><a href='Function模擬.html'>Function模擬</a></li></ul><li class='has-children'><a href='Javascript.html'>Javascript</a><ul class='dropdown'><li><a href='溫度轉換.html'>溫度轉換</a><li><a href='ROC flag.html'>ROC flag</a><li><a href='Japan flag.html'>Japan flag</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='亂數分組流程圖.html'>亂數分組流程圖</a><li><a href='按鈕.html'>按鈕</a><li><a href='W16 檢驗考試.html'>W16 檢驗考試</a><li><a href='Function模擬.html'>Function模擬</a></li></ul><li class='has-children'><a href='Javascript.html'>Javascript</a><ul class='dropdown'><li><a href='溫度轉換.html'>溫度轉換</a><li><a href='ROC flag.html'>ROC flag</a></li></ul><li class='has-children'><a href='W17.html'>W17</a><ul class='dropdown'><li><a href='Kg轉Lb.html'>Kg轉Lb</a></li>
                       </ul>
                 </nav>
               </div>
@@ -149,9 +149,43 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">ROC flag << <a href='ROC flag.html'>Previous</a> <br /><h1>Japan flag</h1>
-<div id="wrapper"><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="jp">Draw Japan</button></div>
-<script src="./../downloads/dart_ex/jp_flag/jp.js"></script><br />ROC flag << <a href='ROC flag.html'>Previous</a> </div>
+    <div id="tipue_search_content">W17 << <a href='W17.html'>Previous</a> <br /><h1>Kg轉Lb</h1>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=a40823112&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=a40823112&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=a40823112&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('kglb_dart')">Kg轉Lb</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('usa_flag')">USA Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('tp-html')">溫度轉換HTML</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter4')">Flutter4</button> <button onclick="getFlutter('flutter_counter')">Flutter Counter</button> <button onclick="getFlutter('flutter_roc')">ROC Flag</button> <button onclick="getFlutter('flutter_mine1')">踩地雷 1</button> <button onclick="getFlutter('flutter_mine2')">踩地雷 2</button> <button onclick="getFlutter('flutter_mine3')">踩地雷 3</button> <button onclick="getFlutter('flutter_mine4')">踩地雷 4</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=a40823112&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p><br />W17 << <a href='W17.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
