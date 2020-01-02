@@ -61,6 +61,45 @@ document.getElementById("iframe").height = 600 ;
 <script src="/downloads/dart_ex/list/list.js"></script>
 <h2>ROC flag</h2>
 <div id="wrapper"><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="roc">Draw ROC</button> <button id="usa">Draw USA</button></div>
-<script src="/downloads/dart_ex/roc_flag/roc.js"></script><h2>Japan flag</h2>
-<div id="wrapper"><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="jp">Draw Japan</button></div>
-<script src="/downloads/dart_ex/jp_flag/jp.js"></script>
+<script src="/downloads/dart_ex/roc_flag/roc.js"></script>
+<h2>W17 flag</h2>
+<div id="wrapper"><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="usa">Draw USA</button> <button id="jp">Draw Jaspan</button> <button id="fra">Draw France</button> <button id="rus">Draw Russia</button> <button id="roc">Draw ROC</button> <button id="ger">Draw Germany</button> <button id="net">Draw Netherlands</button> <button id="uk">Draw United Kingdom</button></div>
+<script src="/downloads/dart_ex/W17flag/w17.js"></script>
+<h1>W17</h1>
+<h2>Kg轉Lb</h2>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=a40823112&gh_repo=cp2019ag4&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=a40823112&gh_repo=cp2019ag4&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=a40823112&gh_repo=cp2019ag4&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('kglb_dart')">Kg轉Lb</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('usa_flag')">USA Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('tp-html')">溫度轉換HTML</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter4')">Flutter4</button> <button onclick="getFlutter('flutter_counter')">Flutter Counter</button> <button onclick="getFlutter('flutter_roc')">ROC Flag</button> <button onclick="getFlutter('flutter_mine1')">踩地雷 1</button> <button onclick="getFlutter('flutter_mine2')">踩地雷 2</button> <button onclick="getFlutter('flutter_mine3')">踩地雷 3</button> <button onclick="getFlutter('flutter_mine4')">踩地雷 4</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=a40823112&amp;gh_repo=cp2019ag4&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
