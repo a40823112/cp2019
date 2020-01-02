@@ -1,0 +1,6 @@
+name: Dart HTML test with just main
+mode: dart
+files:
+  - name: kglb_html.dart
+  - name: index.html
+  
