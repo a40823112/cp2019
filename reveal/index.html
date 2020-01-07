@@ -60,9 +60,9 @@ Created by [KMOLab](http://lab.kmol.info/)
 # 計算機程式課程
 
 * [溫度轉換](https://a40823112.github.io/cp2019/reveal/index.html#/2)
-* 重量轉換
-* 各國國旗
-* 心得
+* [重量轉換](https://a40823112.github.io/cp2019/reveal/index.html#/2/1)
+* [各國國旗](https://a40823112.github.io/cp2019/reveal/index.html#/2/2)
+* [心得](https://a40823112.github.io/cp2019/reveal/index.html#/2/3)
 
     </script>
 </section>
@@ -73,7 +73,7 @@ Created by [KMOLab](http://lab.kmol.info/)
 <section data-markdown>
     <script type="text/template">
 # 溫度轉換
-<iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=a40823112&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/tp-html&amp;theme=dark" width="800"></iframe>
+<iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=a40823112&gh_repo=cp2019&gh_path=downloads/dart_ex/tp-html&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </script>
 </section>
 
@@ -82,33 +82,8 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
-
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+# 重量轉換
+<iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=a40823112&gh_repo=cp2019&gh_path=downloads/dart_ex/kglb_html&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </script>
 </section>
 
@@ -117,16 +92,23 @@ make.start()
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
-
-### 導入影片 template
-
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+# 各國國旗
+<iframe width="800" height="550" src="https://dartpad.github.io/embed-html.html?gh_owner=a40823112&gh_repo=cp2019&gh_path=downloads/dart_ex/W17flag&theme=dark" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </script>
 </section>
 
 
 						
+    <section data-markdown>
+    <script type="text/template">
+# 心得
+學習到如何從無到有，自己做網頁、打程式，學會如何拍影片、上字幕，我漸漸的對電腦程式更加感興趣。
+    </script>
+</section>
+
+
+
+                        
 </section>
 
 </div>
